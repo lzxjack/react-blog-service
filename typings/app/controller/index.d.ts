@@ -7,6 +7,6 @@ import ExportHome from '../../../app/controller/home';
 
 declare module 'egg' {
   interface IController {
-    news: ExportHome;
+    home: ExportHome;
   }
 }
