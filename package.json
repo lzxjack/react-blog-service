@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "egg-scripts start",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --port 88",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
     "test": "npm run lint -- --fix && npm run test-local",

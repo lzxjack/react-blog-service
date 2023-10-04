@@ -1,4 +1,5 @@
 import { EggAppConfig, PowerPartial } from 'egg';
+import path from "path";
 
 // for config.{env}.ts
 export type DefaultConfig = PowerPartial<EggAppConfig>;
@@ -17,6 +18,13 @@ export default (appInfo: EggAppConfig) => {
     httpOnly: true,
     sameSite: 'none',
     secure: false
+  };
+
+  config.cluster = {
+    https: {
+      key: path.join(__dirname, '../app/cert/api.lzxjack.top.key'),
+      cert: path.join(__dirname, '../app/cert/api.lzxjack.top_bundle.crt')
+    }
   };
 
   return config;
