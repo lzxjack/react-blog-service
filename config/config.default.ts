@@ -1,5 +1,5 @@
 import { EggAppConfig, PowerPartial } from 'egg';
-import path from "path";
+import path from 'path';
 
 // for config.{env}.ts
 export type DefaultConfig = PowerPartial<EggAppConfig>;

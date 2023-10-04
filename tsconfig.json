@@ -1,10 +1,8 @@
 {
   "extends": "@eggjs/tsconfig",
   "compilerOptions": {
-    "declaration": false
+    "declaration": false,
+    "esModuleInterop": true
   },
-  "exclude": [
-    "app/public",
-    "app/views"
-  ]
+  "exclude": ["app/public", "app/views"]
 }
