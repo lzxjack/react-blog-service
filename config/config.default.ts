@@ -17,7 +17,7 @@ export default (appInfo: EggAppConfig) => {
   config.cookies = {
     httpOnly: true,
     sameSite: 'none',
-    secure: false
+    secure: true
   };
 
   config.cluster = {
